@@ -7,7 +7,7 @@ import requests
 from datetime import datetime, timedelta
 
 
-cache = {}
+cache = redis.Redis()
 
 
 def cache_decorator(func):
