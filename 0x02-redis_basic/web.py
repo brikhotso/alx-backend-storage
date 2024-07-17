@@ -7,6 +7,9 @@ import requests
 from datetime import datetime, timedelta
 
 
+cache = {}
+
+
 def cache_decorator(func):
     """"""
     @wraps(func)
